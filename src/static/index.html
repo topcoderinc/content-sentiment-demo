@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>VA Memorial Content Filtering and Sentiment Analysis</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header clearfix">
+      <h3 class="text-muted">VA Memorial Content Filtering and Sentiment Analysis</h3>
+    </header>
+
+    <main role="main">
+      <div class="jumbotron">
+        <h1 class="display-3">Analysis Demo</h1>
+        <div class="form-group">
+          <input class="form-control form-control-lg comment-text" type="text" placeholder="Write comment text…" autofocus>
+        </div>
+        <p><button class="btn btn-lg btn-success" href="#" role="button">Analyze Comment</button></p>
+      </div>
+
+      <div class="row analysis super-hide">
+
+        <div class="col-lg-6">
+
+          <div class="sentiment-re-text">
+            <h4>
+              ReText Sentiment<br>
+              <small class="text-muted">Sentiment Analysis</small>
+            </h4>
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Status
+                <span class="badge badge-pill status"></span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Range
+                <span class="badge badge-pill range"></span>
+              </li>
+              <li class="list-group-item details">
+                <strong>Details</strong>
+              </li>
+              <li class="list-group-item">
+                Words<br>
+                <span class="words"></span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Minimum Score
+                <span class="badge badge-pill min-score"></span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Maxium Score
+                <span class="badge badge-pill max-score"></span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Mean Score
+                <span class="badge badge-pill mean-score"></span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="sentiment-node">
+            <h4>
+              Node Sentiment<br>
+              <small class="text-muted">Sentiment Analysis</small>
+            </h4>
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Status
+                <span class="badge badge-pill status"></span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Range
+                <span class="badge badge-pill range"></span>
+              </li>
+              <li class="list-group-item details">
+                <strong>Details</strong>
+              </li>
+              <li class="list-group-item">
+                Words<br>
+                <span class="words"></span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Score
+                <span class="badge badge-pill score"></span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+          <div class="profanity-re-text">
+            <h4>
+              ReText Profanity<br>
+              <small class="text-muted">Profanity Filtering</small>
+            </h4>
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Status
+                <span class="badge badge-pill status"></span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Is Profane?
+                <span class="badge badge-pill is-profane"></span>
+              </li>
+              <li class="list-group-item">
+                Negative Words<br>
+                <span class="words"></span>
+              </li>
+              <li class="list-group-item">
+                Clean Text<br>
+                <span class="text-muted clean-text"></span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+  </div> <!-- /container -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js" integrity="sha256-8E6QUcFg1KTnpEU8TFGhpTGHw5fJqB9vCms3OhAYLqw=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="/script.js"></script>
+</body>
+</html>
