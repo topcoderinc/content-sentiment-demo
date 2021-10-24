@@ -24,7 +24,7 @@
     "koa-logger": "^3.1.0",
     "koa-router": "^7.2.1",
     "koa-static": "^4.0.2",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.21",
     "retext-english": "^3.0.0",
     "retext-profanities": "^4.4.0",
     "retext-sentiment": "^4.1.0",
